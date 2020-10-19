@@ -10,7 +10,8 @@
 
 $date = $null
 $date = Get-Date -f ddMMyyyyTHHmmss
-$source = Read-Host -Prompt 'Source location'
-$destination = Read-Host -Prompt 'Destination location'
-robocopy $source $destination /E /XO > LogfileLocation"$date".txt
+[string]$source = Read-Host -Prompt 'Source location'
+[string]$destination = Read-Host -Prompt 'Destination location'
+[string]$log = $destination + "\robocopylog" + $date + ".txt"
+robocopy $source $destination /E /XO > $log
 Write-Host "Copy completed, Check logs for any issue."
