@@ -1,4 +1,4 @@
-## Version 0.1
+## Version 0.8
 ## Created by: Ankith Mankunnu
 ## Backup Files to external drive using Robocopy
 ## Usage: 1. Change this line robocopy 'C:\_Work\' 'G:\Backup\' /E /XO > G:\Backup\robocopylog"$date".txt
@@ -15,4 +15,4 @@ $date = Get-Date -f ddMMyyyyTHHmmss
 [string]$destination = Read-Host -Prompt 'Destination location'
 [string]$log = $destination + "\robocopylog" + $date + ".txt"
 robocopy $source $destination /E /XO > $log
-Write-Host "Copy completed, Check logs for any issue."
+Write-Host "Copy completed, Check logs at $log for any issue."
