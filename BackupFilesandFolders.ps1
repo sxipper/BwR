@@ -6,10 +6,11 @@
 ## ChangeLog: 1. Added to GIT HUB.
 ##            2. Testing Write_progress.
 ##            3. Removed hardcoded source and destination.
-$date=$null
-$date = Get-Date -f ddMMyyyyTHHmmss
-robocopy 'Source' 'Destination' /E /XO > LogfileLocation"$date".txt
+##            4. Add user input for Source/Destination location.
 
 $date = $null
 $date = Get-Date -f ddMMyyyyTHHmmss
-robocopy 'Source' 'Destination' /E /XO > LogfileLocation"$date".txt
+$source = Read-Host -Prompt 'Source location'
+$destination = Read-Host -Prompt 'Source location'
+robocopy $source $destination /E /XO > LogfileLocation"$date".txt
+
