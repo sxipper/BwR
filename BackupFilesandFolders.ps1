@@ -9,9 +9,7 @@
 $date=$null
 $date = Get-Date -f ddMMyyyyTHHmmss
 robocopy 'Source' 'Destination' /E /XO > LogfileLocation"$date".txt
-Write-Progress -Activity "Robocopy"
 
 $date = $null
 $date = Get-Date -f ddMMyyyyTHHmmss
 robocopy 'Source' 'Destination' /E /XO > LogfileLocation"$date".txt
-Write-Progress -Activity "Robocopy"
