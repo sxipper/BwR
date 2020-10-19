@@ -7,6 +7,7 @@
 ##            2. Testing Write_progress.
 ##            3. Removed hardcoded source and destination.
 ##            4. Add user input for Source/Destination location.
+##            5. More dynamic now.
 
 $date = $null
 $date = Get-Date -f ddMMyyyyTHHmmss
