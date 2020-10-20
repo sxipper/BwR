@@ -9,6 +9,8 @@
 ##            4. Add user input for Source/Destination location.
 ##            5. More dynamic now.
 ##            6. Switch added for multiple operations.
+##            7. Changed log file extention to .log
+
 Write-Host = "Select your operation"
 Write-Host = "1. Robocopy"
 Write-Host = "2. AzCopy"
@@ -22,7 +24,7 @@ switch ($choice)
         $date = Get-Date -f ddMMyyyyTHHmmss
         [string]$source = Read-Host -Prompt 'Source location'
         [string]$destination = Read-Host -Prompt 'Destination location'
-        [string]$log = $destination + "\robocopylog" + $date + ".txt"
+        [string]$log = $destination + "\robocopylog" + $date + ".log"
         robocopy $source $destination /E /XO > $log
         Write-Host "Copy completed, Check logs at $log for any issue."
     }
