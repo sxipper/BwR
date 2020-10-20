@@ -9,7 +9,7 @@
 ##            4. Add user input for Source/Destination location.
 ##            5. More dynamic now.
 ##            6. Switch added for multiple operations.
-##            7. Changed log file extention to .log
+##            7. Changed log file extention to .log.
 
 Write-Host = "Select your operation"
 Write-Host = "1. Robocopy"
