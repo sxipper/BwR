@@ -1,6 +1,6 @@
 ## Version 0.8
 ## Created by: Ankith Mankunnu
-## Backup Files to external drive using Robocopy
+## Backup Files to external drive using Robocopy or other options.
 ## Usage: Call the script from PS console or IDE.
 
 Write-Host = "Select your operation"
