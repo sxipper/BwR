@@ -1,8 +1,7 @@
 ## Version 0.8
 ## Created by: Ankith Mankunnu
 ## Backup Files to external drive using Robocopy
-## Usage: 1. Change this line robocopy 'C:\_Work\' 'G:\Backup\' /E /XO > G:\Backup\robocopylog"$date".txt
-##        2. Navigate to script location via ps or cmd using cd and do .\BackupFilesandFolders.ps1
+## Usage: Call the script from PS console or IDE.
 ## ChangeLog: 1. Added to GIT HUB.
 ##            2. Testing Write_progress.
 ##            3. Removed hardcoded source and destination.
