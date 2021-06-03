@@ -18,7 +18,6 @@ if($choice -match '^[0-9]+$')
             $date = Get-Date -f ddMMyyyyTHHmmss
             $source = Read-Host -Prompt 'Source location'
             $destination = Read-Host -Prompt 'Destination location'
-            $path = @($source, $destination)
                 if ([string]::IsNullOrEmpty($source) -or [string]::IsNullOrEmpty($destination) -or [string]::IsNullOrWhiteSpace($source) -or [string]::IsNullOrWhiteSpace($destination))
                 {
                     Write-Host "Source or Destination is empty" -ForegroundColor Red
