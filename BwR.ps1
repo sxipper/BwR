@@ -40,7 +40,10 @@ if($choice -match '^[0-9]+$')
         0
         {Clear-Host}
         Default 
-        {Write-Host "Wrong Operation" -ForegroundColor Red}
+        {
+            Write-Host "Wrong Operation" -ForegroundColor Red
+            Start-Sleep -Seconds 3
+        }
     }
 }
 else
