@@ -14,8 +14,11 @@ if($choice -match '^[0-9]+$')
     {
         1
         {
+<<<<<<< AM
             #this is new
             $date = $null
+=======
+>>>>>>> main
             $date = Get-Date -f ddMMyyyyTHHmmss
             $source = Read-Host -Prompt 'Source location'
             $destination = Read-Host -Prompt 'Destination location'
@@ -28,7 +31,7 @@ if($choice -match '^[0-9]+$')
                 elseif(($source | Test-path -PathType Any) -or ($destination | Test-path -PathType Any))
                 {
                     [string]$log = $destination + "\robocopylog" + $date + ".log"
-                    New-Item $log -ItemType File -Force -Verbose | Out-Null
+                    New-Item $log -ItemType File -Force | Out-Null
                     robocopy $source $destination /E /XO /LOG:$log /TEE
                     Write-Host "Copy completed, Check $log for any issue." -ForegroundColor Green
                 }
