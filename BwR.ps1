@@ -14,6 +14,7 @@ if($choice -match '^[0-9]+$')
     {
         1
         {
+            #this is new
             $date = $null
             $date = Get-Date -f ddMMyyyyTHHmmss
             $source = Read-Host -Prompt 'Source location'
