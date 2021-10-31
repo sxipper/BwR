@@ -33,7 +33,6 @@ if($choice -match '^[0-9]+$')
                 {
                     Write-Host "Path entered could be wrong" -ForegroundColor Red
                     Start-Sleep -Seconds 3
-                    Clear-Host
                 }
         }
         2
