@@ -21,7 +21,6 @@ if($choice -match '^[0-9]+$')
                 {
                     Write-Host "Source or Destination is empty" -ForegroundColor Red
                     Start-Sleep -Seconds 3
-                    Clear-Host
                 }
                 elseif(($source | Test-path -PathType Any) -or ($destination | Test-path -PathType Any))
                 {
