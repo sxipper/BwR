@@ -16,8 +16,8 @@ if($choice -match '^[0-9]+$')
         1
         {
             $date = Get-Date -f ddMMyyHHmmss
-            $source = Read-Host -Prompt 'Source location'
-            $destination = Read-Host -Prompt 'Destination location'
+            $source = Read-Host 'Source location'
+            $destination = Read-Host 'Destination location'
                 if ([string]::IsNullOrEmpty($source) -or [string]::IsNullOrEmpty($destination) -or [string]::IsNullOrWhiteSpace($source) -or [string]::IsNullOrWhiteSpace($destination))
                 {
                     Clear-Host
