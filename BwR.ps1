@@ -2,6 +2,7 @@
 ## Created by: Ankith Mankunnu
 ## Backup Files to external drive using Robocopy or other options.
 ## Usage: Call the script from PS console or IDE.
+##        .\BwR.ps1
 
 Write-Host = "Select your operation"
 Write-Host = "1. Robocopy"
