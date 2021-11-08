@@ -8,7 +8,7 @@ Write-Host = "Select your operation"
 Write-Host = "1. Robocopy"
 Write-Host = "2. AzCopy"
 Write-Host = "0. Clear/Exit"
-$choice = Read-Host -Prompt "Please enter your choice. `n" 
+$choice = Read-Host "Please enter your choice. `n" 
 if($choice -match '^[0-9]+$')
 {
     switch ($choice) 
