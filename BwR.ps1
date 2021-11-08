@@ -44,7 +44,10 @@ if($choice -match '^[0-9]+$')
             Write-Host "Coming soon!!" -ForegroundColor Yellow
         }
         0
-        {Clear-Host}
+        {
+            Clear-Host 
+            Start-Sleep -Seconds 5
+        }
         Default 
         {
             Clear-Host
