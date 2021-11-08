@@ -19,8 +19,9 @@ if($choice -match '^[0-9]+$')
             $destination = Read-Host -Prompt 'Destination location'
                 if ([string]::IsNullOrEmpty($source) -or [string]::IsNullOrEmpty($destination) -or [string]::IsNullOrWhiteSpace($source) -or [string]::IsNullOrWhiteSpace($destination))
                 {
+                    Clear-Host
                     Write-Host "Source or Destination is empty" -ForegroundColor Red
-                    Start-Sleep -Seconds 3
+                    Start-Sleep -Seconds 5
                 }
                 elseif(($source | Test-path -PathType Any) -or ($destination | Test-path -PathType Any))
                 {
@@ -31,20 +32,28 @@ if($choice -match '^[0-9]+$')
                 }
                 else
                 {
+                    Clear-Host
                     Write-Host "Path entered could be wrong" -ForegroundColor Red
-                    Start-Sleep -Seconds 3
+                    Start-Sleep -Seconds 5
                 }
         }
         2
-        {Write-Host "Coming soon!!" -ForegroundColor Yellow}
+        {
+            Clear-Host
+            Write-Host "Coming soon!!" -ForegroundColor Yellow
+        }
         0
         {Clear-Host}
         Default 
         {
+            Clear-Host
             Write-Host "Wrong Operation" -ForegroundColor Red
-            Start-Sleep -Seconds 3
+            Start-Sleep -Seconds 5
         }
     }
 }
 else
-{Write-Host "Invalid choice" -ForegroundColor DarkRed -BackgroundColor Yellow}
+{
+    Clear-Host
+    Write-Host "Invalid Choice!!" -ForegroundColor DarkRed -BackgroundColor DarkYellow
+}
