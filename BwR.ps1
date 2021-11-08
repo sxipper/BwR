@@ -26,7 +26,7 @@ if($choice -match '^[0-9]+$')
                 }
                 elseif(($source | Test-path -PathType Any) -or ($destination | Test-path -PathType Any))
                 {
-                    [string]$log = $destination + "\robocopylog" + $date + ".log"
+                    [string]$log = $destination + "\RobocopyLog" + $date + ".log"
                     New-Item $log -ItemType File -Force | Out-Null
                     robocopy $source $destination /E /XO /MT /LOG:$log /TEE
                     Write-Host "Copy completed, Check $log for any issue." -ForegroundColor Green
