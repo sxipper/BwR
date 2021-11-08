@@ -26,7 +26,7 @@ if($choice -match '^[0-9]+$')
                 {
                     [string]$log = $destination + "\robocopylog" + $date + ".log"
                     New-Item $log -ItemType File -Force | Out-Null
-                    robocopy $source $destination /E /XO /LOG:$log /TEE
+                    robocopy $source $destination /E /XO /MT /LOG:$log /TEE
                     Write-Host "Copy completed, Check $log for any issue." -ForegroundColor Green
                 }
                 else
