@@ -59,5 +59,5 @@ if($choice -match '^[0-9]+$')
 else
 {
     Clear-Host
-    Write-Host "Invalid Choice!!" -ForegroundColor DarkRed -BackgroundColor DarkYellow
+    Write-Host "Invalid Choice!!" -ForegroundColor DarkRed
 }
