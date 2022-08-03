@@ -45,7 +45,8 @@ if ($choice -match '^[0-9]+$')
         }
         0
         {
-            Clear-Host 
+            Clear-Host
+            Write-Host "Clearing screen" -ForegroundColor Yellow
             Start-Sleep -Seconds 5
         }
         Default 
