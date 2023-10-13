@@ -34,7 +34,7 @@ if ($choice -match '^[0-9]+$')
             else
             {
                 Clear-Host
-                Write-Host "Path entered could be wrong" -ForegroundColor Red
+                Write-Host "Source Path:$source `nDestination Path:$destination `nPlease check the paths." -ForegroundColor Red
                 Start-Sleep -Seconds 5
             }
         }
